@@ -1,0 +1,40 @@
+.text
+LW $0,  1
+SW a , $0
+LW $0,  2
+SW b , $0
+LW $1,  0
+SW a , $1
+l0:
+LW $0,  a
+LW $1,  b
+BGT $0, $1, l1
+LW $2,  1
+SW b , $2
+LW $3,  a
+LW $4,  1
+ADD $5, $3, $4
+SW a , $5
+J l0
+l1:
+LW $0,  a
+LW $1,  1
+ADD $2, $0, $1
+l2:
+SW a , $2
+LW $0,  a
+LW $1,  10
+BGT $0, $1, l2
+LW $2,  a
+LW $3,  10
+BEQ $2, $3, l4
+J l5
+l4:
+LW $0,  100
+SW b , $0
+J l6
+l5:
+LW $0,  100
+SW a , $0
+MUL $0, $1, $0
+l6:

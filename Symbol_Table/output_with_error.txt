@@ -1,0 +1,18 @@
+Multiple declarations ofxyat line number 3
+syntax error22
+syntax error22
+syntax error23
+syntax error23
+syntax error23
+....Accepted....
+
+Symbol table: 
+[33mvar				xy		0		2		10
+[33mvar				z		0		5		20
+[33mvar				x		0		6		0
+[33mvar				s		0		8		"a"
+[33mvar				w		0		9		200
+[33mvar				ooo		0		10		10
+[33mvar				temp		1		17		2
+[33mvar				dum		1		20		100
+[33mvar				xyz		1		24		200

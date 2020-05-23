@@ -1,0 +1,24 @@
+function start()
+{
+	//alert( "hi" );
+	var i=0;
+	var j="lol";
+	var k=0;
+	for (i=0; i != 12; i++)
+	{
+		i=0;
+		
+	}
+	do
+	{
+		i=0;
+	}
+	while(i<10)
+	var w=10;
+	switch ( i )
+	{
+		case (i) : i=0; break;
+		case (j) : j++; break;
+		default : i=10;
+	}
+}

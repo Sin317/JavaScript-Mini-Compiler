@@ -1,0 +1,31 @@
+//var xy=1000;
+var xy=10;
+var xy=100;
+//int a;
+var z=20;
+var x=0;	
+//int x=0;
+var s="a";
+var w=200;
+var ooo;
+ooo=10;
+do{
+	/*multi line comment
+        line 1*/
+	alert("thu") ;
+	}while (x>10);
+for(var i=10 ;i<n;i++){
+		var temp=2;
+		//this is a comment
+                alert("pen") ;
+                var dum=100;
+		}
+switch("hello");{
+	case "hello":
+	var xyz=200;
+	alert("hi"); break;
+	case 1 : 
+	var wwww=1000;
+	alert("hi"); break;
+        default : alert("end");break;
+}

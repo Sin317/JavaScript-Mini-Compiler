@@ -1,0 +1,13 @@
+....Accepted....
+
+Symbol table: 
+[33mvar				xy		0		2		10
+[33mvar				z		0		4		20
+[33mvar				x		0		5		0
+[33mvar				s		0		7		"a"
+[33mvar				w		0		8		200
+[33mvar				ooo		0		9		10
+[33mvar				temp		1		16		2
+[33mvar				dum		1		19		100
+[33mvar				xyz		1		23		200
+[33mvar				wwww		1		26		1000

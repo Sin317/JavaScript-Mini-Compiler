@@ -1,0 +1,154 @@
+ICG
+t0 = 1
+a = t0
+t1 = 2
+b = t1
+t2 = 0
+a = t2
+label l0
+t3 = a
+t4 = b
+t5 = t3 < t4
+iffalse t5 goto (l1)
+t9 = 1
+b = t9
+t10 = a
+t11 = 3
+t12 = t10 - t11
+a = t12
+t6 = a
+t7 = 1
+t8 = t6 + t7
+a = t8
+goto (l0)
+label l1
+label l2
+t13 = a
+t14 = 1
+t15 = t13 * t14
+a = t15
+t16 = a
+t17 = 10
+t18 = t16 > t17
+
+iftrue t18 goto (l2)
+t19 = a
+t20 = 10
+t21 = t19 == t20
+iftrue t21 goto (l4)
+goto (l5)
+label l4
+t22 = 100
+b = t22
+goto (l6)
+label l5
+t23 = 100
+a = t23
+label l6
+
+
+{'t3 < t4': 't5', 't10 - t11': 't12', 't6 + t7': 't8', 't13 * t14': 't15', 't16 > t17': 't18', 't19 == t20': 't21'}
+
+
+OPTIMIZED ICG AFTER ELIMINATING COMMON SUBEXPRESSIONS
+t0 = 1
+a = t0
+t1 = 2
+b = t1
+t2 = 0
+a = t2
+label l0
+t3 = a
+t4 = b
+t5 = t3 < t4
+iffalse t5 goto (l1)
+t9 = 1
+b = t9
+t10 = a
+t11 = 3
+t12 = t10 - t11
+a = t12
+t6 = a
+t7 = 1
+t8 = t6 + t7
+a = t8
+goto (l0)
+label l1
+label l2
+t13 = a
+t14 = 1
+t15 = t13 * t14
+a = t15
+t16 = a
+t17 = 10
+t18 = t16 > t17
+
+iftrue t18 goto (l2)
+t19 = a
+t20 = 10
+t21 = t19 == t20
+iftrue t21 goto (l4)
+goto (l5)
+label l4
+t22 = 100
+b = t22
+goto (l6)
+label l5
+t23 = 100
+a = t23
+label l6
+
+
+OPTIMIZED ICG AFTER CONSTANT FOLDING
+t0 = 1
+a = t0
+t1 = 2
+b = t1
+t2 = 0
+a = t2
+label l0
+t3 = a
+t4 = b
+t5 = t3 < t4
+iffalse t5 goto (l1)
+t9 = 1
+b = t9
+t10 = a
+t11 = 3
+t12 = t10 - t11
+a = t12
+t6 = a
+t7 = 1
+t8 = t6 + t7
+a = t8
+goto (l0)
+label l1
+label l2
+t13 = a
+t14 = 1
+t15 = t13 * t14
+a = t15
+t16 = a
+t17 = 10
+t18 = t16 > t17
+
+iftrue t18 goto (l2)
+t19 = a
+t20 = 10
+t21 = t19 == t20
+iftrue t21 goto (l4)
+goto (l5)
+label l4
+t22 = 100
+b = t22
+goto (l6)
+label l5
+t23 = 100
+a = t23
+label l6
+
+
+
+Optimization Done
+
+
